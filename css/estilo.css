@@ -31,3 +31,6 @@ body{
 .cartao{
     border-radius: 30px;
 }
+#professor{
+    cursor: pointer;
+}
