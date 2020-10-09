@@ -1,11 +1,33 @@
+@font-face{
+	font-family: 'Montserrat';
+	src: url(fonts/Montserrat-Bold.otf);
+}
+@font-face{
+	font-family: 'Google';
+	src:url(fonts/ProductSans-Regular.ttf);
+}
 *{
     margin: 0;
     padding: 0;
     outline: none;
 }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+    font-family: 'Montserrat', sans-serif;
+}
+p{
+    font-family: 'Google', sans-serif;
+}
 body{
-    background-color: black;
+    background-color:#ededed;
+}
+.bg-gradient-azul{
+    background: linear-gradient(to right, #4477ea, #4e81e9);
 }
 .cartao{
-    border-radius: 10px;
+    border-radius: 30px;
 }
