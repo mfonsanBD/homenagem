@@ -5,12 +5,13 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="css/estilo.css">
   </head>
-  <body class="p-2">
+  <body class="p-3">
     <div class="container">
       <div class="row">
           <div class="col-lg-12 p-5 cartao bg-gradient-azul">
@@ -24,12 +25,15 @@
                   </div>
               </div>
           </div>
+          <div class="col-lg-12 mt-4 mb-4 text-center">
+            <button class="btn btn-warning text-white">Clique no nome dos professores abaixo e veja o que acontece</button>
+          </div>
       </div>
       <div class="professores mt-2">
         <div class="row mb-1">
           <div id="professor" class="col bg-white p-3 text-center rounded rounded-lg ml-1 mr-1 mb-1 shadow-sm" data-toggle="modal" data-target="#rosenhaim">
             <span class="rounded-circle bg-gradient-azul text-white p-2">RR</span>
-            <h6 class="text-uppercase mt-2 mb-0">Roberto<br>Rosenhaim</h6>
+            <h6 class="text-uppercase mt-3 mb-0">Roberto<br>Rosenhaim</h6>
           </div>
           <div id="professor" class="col bg-white p-3 text-center rounded rounded-lg ml-1 mr-1 mb-1 shadow-sm" data-toggle="modal" data-target="#adhemar">
             <span class="rounded-circle bg-gradient-azul text-white p-2">AT</span>
@@ -45,26 +49,31 @@
           </div>
         </div>
         <div class="row mb-1">
-          <div id="professor" class="col bg-white p-3 text-center rounded rounded-lg ml-1 mr-1 mb-1 shadow-sm">
+          <div id="professor" class="col bg-white p-3 text-center rounded rounded-lg ml-1 mr-1 mb-1 shadow-sm" data-toggle="modal" data-target="#gilselene">
             <span class="rounded-circle bg-gradient-azul text-white p-2">GG</span>
             <h6 class="text-uppercase mt-2 mb-0">Gilselene<br>Guimaraes</h6>
           </div>
-          <div id="professor" class="col bg-white p-3 text-center rounded rounded-lg ml-1 mr-1 mb-1 shadow-sm">
+          <div id="professor" class="col bg-white p-3 text-center rounded rounded-lg ml-1 mr-1 mb-1 shadow-sm" data-toggle="modal" data-target="#miriam">
             <span class="rounded-circle bg-gradient-azul text-white p-2">MV</span>
             <h6 class="text-uppercase mt-2 mb-0">Miriam<br>Valle</h6>
           </div>
-          <div id="professor" class="col bg-white p-3 text-center rounded rounded-lg ml-1 mr-1 mb-1 shadow-sm">
+          <div id="professor" class="col bg-white p-3 text-center rounded rounded-lg ml-1 mr-1 mb-1 shadow-sm" data-toggle="modal" data-target="#nada">
             <span class="rounded-circle bg-gradient-azul text-white p-2">VB</span>
             <h6 class="text-uppercase mt-2 mb-0">Victor<br>Barreto</h6>
           </div>
-          <div id="professor" class="col bg-white p-3 text-center rounded rounded-lg ml-1 mr-1 mb-1 shadow-sm">
+          <div id="professor" class="col bg-white p-3 text-center rounded rounded-lg ml-1 mr-1 mb-1 shadow-sm" data-toggle="modal" data-target="#nada">
             <span class="rounded-circle bg-gradient-azul text-white p-2">DI</span>
             <h6 class="text-uppercase mt-2 mb-0">Domingos<br>Isidorio</h6>
           </div>
         </div>
       </div>
+      <div class="row mt-5">
+        <div class="col-12 text-center" id="professor" data-toggle="modal" data-target="#texto">
+          <img src="img/presente.png" alt="Caixa de Presente" class="animate__animated animate__headShake animate__infinite">
+        </div>
+      </div>
     </div>
-    <!-- Optional JavaScript --><script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
@@ -75,15 +84,15 @@
 <div class="modal fade" id="rosenhaim" tabindex="-1" role="dialog" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered" role="document">
     <div class="modal-content">
-      <div class="modal-header">
-        <footer class="blockquote-footer">Rosenhaim, <cite title="Título da fonte">Roberto</cite></footer>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+      <div class="modal-header bg-gradient-azul">
+        <footer class="blockquote-footer text-white">Rosenhaim, <cite title="Título da fonte">Roberto</cite></footer>
+        <button type="button" class="close text-white" data-dismiss="modal" aria-label="Fechar">
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
       <div class="modal-body">
         <blockquote class="blockquote text-center">
-          <p class="mb-0">"Essa prova está goiaba!"</p>
+          <p class="mb-0">"Essa prova aí está goiaba!"</p>
         </blockquote>
       </div>
     </div>
@@ -93,15 +102,15 @@
 <div class="modal fade" id="adhemar" tabindex="-1" role="dialog" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered" role="document">
     <div class="modal-content">
-      <div class="modal-header">
-        <footer class="blockquote-footer">Tomas, <cite title="Título da fonte">Adhemar</cite></footer>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+      <div class="modal-header bg-gradient-azul">
+        <footer class="blockquote-footer text-white">Tomas, <cite title="Título da fonte">Adhemar</cite></footer>
+        <button type="button" class="close text-white" data-dismiss="modal" aria-label="Fechar">
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
       <div class="modal-body">
         <blockquote class="blockquote text-center">
-          <p class="mb-0">"E aí, pessoal! Pessoal?"</p>
+          <p class="mb-0">"Isso aí é molezinha, cara."</p>
         </blockquote>
       </div>
     </div>
@@ -111,9 +120,9 @@
 <div class="modal fade" id="larangeiras" tabindex="-1" role="dialog" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered" role="document">
     <div class="modal-content">
-      <div class="modal-header">
-        <footer class="blockquote-footer">Larangeiras, <cite title="Título da fonte">Alessandro</cite></footer>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+      <div class="modal-header bg-gradient-azul">
+        <footer class="blockquote-footer text-white">Larangeiras, <cite title="Título da fonte">Alessandro</cite></footer>
+        <button type="button" class="close text-white" data-dismiss="modal" aria-label="Fechar">
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
@@ -129,15 +138,89 @@
 <div class="modal fade" id="guilherme" tabindex="-1" role="dialog" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered" role="document">
     <div class="modal-content">
-      <div class="modal-header">
-        <footer class="blockquote-footer">Guilherme, <cite title="Título da fonte">José</cite></footer>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+      <div class="modal-header bg-gradient-azul">
+        <footer class="blockquote-footer text-white">Guilherme, <cite title="Título da fonte">José</cite></footer>
+        <button type="button" class="close text-white" data-dismiss="modal" aria-label="Fechar">
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
       <div class="modal-body">
         <blockquote class="blockquote text-center">
           <p class="mb-0">"Da uma lida aí terrorista"</p>
+        </blockquote>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="gilselene" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header bg-gradient-azul">
+        <footer class="blockquote-footer text-white">Guimarães, <cite title="Título da fonte">Gilselene</cite></footer>
+        <button type="button" class="close text-white" data-dismiss="modal" aria-label="Fechar">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <blockquote class="blockquote text-center">
+          <p class="mb-0">"Só aceito se for a caneta, nada de lápis."</p>
+        </blockquote>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="miriam" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header bg-gradient-azul">
+        <footer class="blockquote-footer text-white">Valle, <cite title="Título da fonte">Miriam</cite></footer>
+        <button type="button" class="close text-white" data-dismiss="modal" aria-label="Fechar">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <blockquote class="blockquote text-center">
+          <p class="mb-0">"Nada de foto na minha aula."</p>
+        </blockquote>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="nada" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header bg-gradient-azul">
+        <footer class="blockquote-footer text-white">S.I, <cite title="Título da fonte">Alunos</cite></footer>
+        <button type="button" class="close text-white" data-dismiss="modal" aria-label="Fechar">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <blockquote class="blockquote text-center">
+          <p class="mb-0">Fica esperto professor, logo vamos pegar o seu bordão. rsrs</p>
+        </blockquote>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="texto" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header bg-gradient-azul">
+        <footer class="blockquote-footer text-white">S.I, <cite title="Título da fonte">Alunos</cite></footer>
+        <button type="button" class="close text-white" data-dismiss="modal" aria-label="Fechar">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <blockquote class="blockquote text-center">
+          <p class="mb-0">Profissionais importantíssimos na construção do saber, construção de outros profissionais, capazes de inspirar e incentivar. Nós só temos a agradecer a você por todo empenho e paciência.</p><br>
+          <p>Esse é a nossa homenagem pelo dia 15/10 - Dia dos Professores.</p><br>
+          <small>*Os bordões são só brincadeira gente! rs</small>
         </blockquote>
       </div>
     </div>
